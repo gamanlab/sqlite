@@ -7,7 +7,7 @@ import (
 
 	"gorm.io/gorm/callbacks"
 
-	gosqlite "github.com/glebarez/go-sqlite"
+	gosqlite "github.com/gamanlab/go-sqlite"
 	sqlite3 "modernc.org/sqlite/lib"
 
 	"gorm.io/gorm"
@@ -18,7 +18,7 @@ import (
 )
 
 // DriverName is the default driver name for SQLite.
-const DriverName = "sqlite"
+const DriverName = "glebarez_sqlite"
 
 type Dialector struct {
 	DriverName string
